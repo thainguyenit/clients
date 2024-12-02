@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+	SiteName : 
+	FileName : import.css
+	Description : import styles
+-------------------------------------------------- */
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "idangerous.swiper.css";
+@import "animate.css";
+@import "socialo-fonts.css";
+@import "style.css";

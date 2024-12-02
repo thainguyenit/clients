@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+	SiteName : 
+	FileName : import.css
+	Description : import styles
+	Developer: thainguyenit@gmail.com
+-------------------------------------------------- */
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "style-revolution.css";
+@import "extralayers.css";
+@import "settings.css";
+@import "owl.carousel.css";
+@import "owl.theme.css";
+@import "jquery.mmenu.css";
+@import "animate.css";
+@import "style.css";

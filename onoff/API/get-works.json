@@ -1,0 +1,117 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "thumb_pc": "img/works/work-01/img.gif",
+            "title_en": "UQWIMAX 2+ SPECIAL SITE",
+            "title_jp": "UQWIMAX 2+ SPECIAL SITE",
+            "ourworks": "Art direction / design / html",
+            "url": "http://",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "2",
+            "thumb_pc": "img/works/work-02/img.gif",
+            "title_en": "Puccho × AKB48 rock-paper-scissors battle",
+            "title_jp": "ぷっちょ×AKB48 じゃんけんバトル",
+            "ourworks": "Art direction / design / html",
+            "url": "http://",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "3",
+            "thumb_pc": "img/works/work-03/img.gif",
+            "title_en": "Coffee shop little luxury AGF",
+            "title_jp": "AGF　ちょっと贅沢な珈琲店",
+            "ourworks": "Art direction / design / html",
+            "url": "http://",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "4",
+            "thumb_pc": "img/works/work-04/img.png",
+            "title_en": "FM COCOLO",
+            "title_jp": "FM COCOLO",
+            "ourworks": "Art direction / design / html",
+            "url": "http://cocolo.jp/",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "5",
+            "thumb_pc": "img/works/work-05/img.png",
+            "title_en": "ハカリンピック",
+            "title_jp": "ハカリンピック",
+            "ourworks": "Art direction / design / html",
+            "url": "http://",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "6",
+            "thumb_pc": "img/works/work-06/img.png",
+            "title_en": "しまね はじまり通り",
+            "title_jp": "しまね はじまり通り",
+            "ourworks": "Design / Movable Type / JavaScript / PHP",
+            "url": "http://www.shimane-hajimaru.jp",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "7",
+            "thumb_pc": "img/works/work-07/img.png",
+            "title_en": "HOW TO 家電リサイクル",
+            "title_jp": "HOW TO 家電リサイクル",
+            "ourworks": "design / html / JavaScript",
+            "url": "http://www.kaden-recycle.net",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "8",
+            "thumb_pc": "img/works/work-08/img.png",
+            "title_en": "日本食研　宮殿のタレ",
+            "title_jp": "日本食研　宮殿のタレ",
+            "ourworks": "design / Flash",
+            "url": "http://www.yakiniku-kyuden.com",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "9",
+            "thumb_pc": "img/works/work-09/img.png",
+            "title_en": "KUBOTA VIRTUAL MUSEUM",
+            "title_jp": "KUBOTA VIRTUAL MUSEUM",
+            "ourworks": "Planning / 3DCG / COPY / Flash",
+            "url": "http://www.kubota.co.jp/museum/",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        },
+        {
+            "id": "10",
+            "thumb_pc": "img/works/work-10/img.png",
+            "title_en": "AIR CANADA calgary flights",
+            "title_jp": "AIR CANADA calgary flights",
+            "ourworks": "Design / Flash / HTML / 3D",
+            "url": "http://",
+            "sort_date": "October 21, 2013",
+            "year": "2013",
+            "new_flag": 0
+        }
+    ],
+    "status": true,
+    "count": 20,
+    "is_next": true
+}

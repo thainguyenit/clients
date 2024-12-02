@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*profile*/
+.propzy-services{
+    font-size: 14px;
+    color: #333;
+}
+.bl-banner{
+    background: url('../images/propzy-services/banner.jpg') no-repeat center;
+    background-size: cover;
+    height: 125px;
+    text-align: center;
+    color: #fff;
+}
+.bl-banner h2{
+    font-size: 32px;
+    padding: 25px 0;
+}
+.bl-contact{
+    color: #fff;
+    font-size: 16px;
+}
+.col-contact, .col-hotline{
+    min-height: 105px;
+    position: relative;
+}
+.col-contact{
+    background-color: #0099cc;
+    position: relative;
+    padding: 15px 0 15px 100px;
+}
+.col-contact:after{
+    content: '';
+    background: url('../images/propzy-services/ic-arrow.png') no-repeat;
+    width: 9px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    top: 45px;
+    z-index: 10;
+}
+.col-contact [class*='col-md-']{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.col-contact .form-control{
+    background: #3399ff;
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    color: #99ccff;
+}
+.col-contact ::-webkit-input-placeholder {
+   color: #99ccff;
+}
+
+.col-contact :-moz-placeholder { /* Firefox 18- */
+   color: #99ccff;  
+}
+
+.col-contact ::-moz-placeholder {  /* Firefox 19+ */
+   color: #99ccff;  
+}
+
+.col-contact :-ms-input-placeholder {  
+   color: #99ccff;  
+}
+.col-contact .btn-submit{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 35px;
+    font-weight: bold;
+}
+.col-contact p{
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+.col-hotline{
+    background-color: #003399;
+    padding: 25px 3% 0;
+}
+.col-contact p, .col-hotline p{
+    font-weight: bold;
+}
+.col-hotline p{
+    background: url('../images/propzy-services/ic-phone.png') no-repeat left center;
+    padding-left: 50px;
+}
+.col-hotline .phone-hotline{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.bl-content{
+    padding: 40px 0;
+}
+.col-tab-menu .tab-menu a{
+    padding: 12px 18px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 3px;
+    background: url('../images/propzy-services/ic-arrow-tab.png') no-repeat 94% center #efefef;
+}
+.col-tab-menu .tab-menu li.active a,.col-tab-menu .tab-menu a:hover, .col-tab-menu .tab-menu a:focus{
+    color: #fff; 
+    background: url('../images/propzy-services/ic-arrow-tab-active.png') no-repeat 94% center #164b85;
+}
+.col-tab-content .form-info .control-label{
+    font-weight: normal;
+    text-align: left;
+    padding: 5px 0;
+}
+.col-tab-content .form-info .form-control{
+    border-radius: 0;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    background: transparent;
+    height: 38px;
+}
+.col-tab-content .form-info .form-group{
+    margin-bottom: 7px;
+}
+.col-tab-content .form-info .btn-continue{
+    border: 0;
+    border-radius: 0;
+    background-color: #97bc01;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 12px;
+    margin-top: 22px;
+}
+.col-tab-content .title-content{
+    font-size: 26px;
+    color: #999;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.col-tab-content .p-slogan{
+    color: #0099cc;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+.col-tab-content .label-radio{
+    font-weight: normal;
+    margin-bottom: 15px;
+    display: block;
+}
+.col-tab-content .label-radio input[type=radio]{
+    vertical-align: top;
+}
+.col-tab-content .form-border{
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 32px 0 25px;
+    margin: 40px 0 45px;
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>::Cua Hang 247::</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div id="cha_wrapper">
+        <div id="cha_header" class="wrap">
+
+            <div class="cha_header_top">
+                <div class="container">
+                    <div class="cha_module">
+                        <div class="header-setting">
+                            <div>
+                                <i class="fa fa-phone" aria-hidden="true"></i> 0903 863457
+                            </div>
+                        </div>
+                        <div class="gio-hang-top">
+                            <a href="shopping-cart.html">
+                                <span>3</span>giỏ hàng
+                            </a>
+                        </div>
+                        <div class="header-account">
+                            <div class="myaccount">
+                                <div class="tongle">
+                                    <i class="fa fa-user"></i>
+                                    <span>Tài khoản</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="customer-ct content">
+                                    <ul class="links">
+                                        <li class="first">
+                                            <a class="top-link-myaccount" title="My Account" href="profile.html">Tài khoản</a>
+                                        </li>
+                                        <li>
+                                            <a class="top-link-login" title="Đăng nhập" href="dang-nhap.html">Đăng nhập</a>
+                                        </li>
+                                        <li>
+                                            <a class="top-link-reg" title="Đăng Ký" href="dang-ky.html" >Đăng Ký</a>
+                                        </li>
+                                        <li>
+                                            <a class="top-link-out" title="Đăng Xuất" href="#">Đăng Xuất</a>
+                                        </li>
+                                        <li>
+                                            <a class="top-link-wishlist" title="Sản phẩm yêu thích" href="sp-yeu-thich.html">Sản phẩm yêu thích</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cha_header_logo">
+                <div class="container">
+                    <div class="container_in">
+                        <div class="row">
+                            <h1 id="logo" class="responsv col-md-3">
+                                <a href="index.html" title="Magento Commerce">
+                                    <img alt="" src="images/logo.png">
+                                </a>
+                            </h1>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="time-line">
+                                        <ol class="progress-cart" data-steps="3">
+                                            <li class="active">
+                                                <span class="name">Đăng nhập</span>
+                                                <span class="step"><span>1</span></span>
+                                            </li>
+                                            <li>
+                                                <span class="name">Địa chỉ</span>
+                                                <span class="step"><span>2</span></span>
+                                            </li>
+                                            <!-- class="done" -->
+                                            <li>
+                                                <span class="name">Thanh toán</span>
+                                                <span class="step"><span>3</span></span>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AND HEADER -->
+
+        <div id="cha_content" class="wrap">
+            <div class="container">
+                <div class="row">
+
+                    <div class="shopping-cart">
+                        <div class="title-shopping"></div>
+                        <div class="cart-nologin">
+                            <div class="col-md-7">
+                                <div class="bor-cart-02">
+                                    <div class="title-bc-02">
+                                        <h2>Đăng nhập hoặc Đặt hàng không cần đăng ký</h2>
+                                    </div>
+                                    <div class="inner-bc02">
+                                        <div class="inner-bc02-login">
+                                            <div class="fo-item">
+                                                <label for="" class="control-label">Xin vui lòng nhập email:</label>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="in-txt-no-acc" placeholder="Xin vui lòng nhập email:">
+                                                </div>
+                                            </div>
+                                            <div class="fo-item">
+                                                <div class="form-group">
+                                                    <label class="form-check-inline">
+                                                      <input class="form-check-input" type="radio" name="cart-account" id="in-no-acc" value="option1" checked="checked" onclick="javascript:yesnoCheck();"> Đặt hàng mà không cần đăng ký  
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="fo-item">
+                                                <div class="form-group">
+                                                    <label class="form-check-inline">
+                                                      <input class="form-check-input" type="radio" name="cart-account" id="in-have-acc" value="option2" onclick="javascript:yesnoCheck();"> Tôi đã có tài khoản tại cuahang247.com
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="fo-item">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="in-txt-have-acc" placeholder="Xin vui lòng nhập email:">
+                                                </div>
+                                            </div>
+                                            <div class="text-right"><a href="quen-mat-khau.html">Quên mật khẩu?</a></div>
+                                            <div class="fo-item">
+                                                <div class="pro-bt-outer">
+                                                    <a href="chon-dia-chi.html">Tiếp tục <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-control-label text-center">Hoặc đăng nhập với</div>
+                                            <div class="login-icon login-fb"><a href="#" id="in-have-fb"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a></div>
+                                            <div class="login-icon login-gl"><a href="#" id="in-have-gl"><i class="fa fa-google" aria-hidden="true"></i><span>Google</span></a></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="bor-cart-02">
+                                    <div class="title-bc-02">
+                                        <h2>Thông tin đơn hàng</h2>(1 sản phẩm)<a href="shopping-cart-01.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</a></div>
+                                    <div class="inner-bc02">
+                                        <div class="column-labels">
+                                            <label class="product-details">Sản phẩm</label>
+                                            <label class="product-quantity">Số lượng</label>
+                                            <label class="product-line-price">Giá</label>
+                                        </div>
+                                        <div class="list-pro-cart">
+                                            <div class="product">
+                                                <div class="product-details">
+                                                    <div class="product-title"><a href="#"><b>Bình giữ nhiệt Lock&Lock Colorful Tumbler (FUNCOLOR) </b></a></div>
+                                                </div>
+                                                <div class="product-quantity">
+                                                    1
+                                                </div>
+                                                <div class="product-line-price">190.000.000 <span>VNĐ</span></div>
+                                            </div>
+                                            <div class="product">
+                                                <div class="product-details">
+                                                    <div class="product-title"><a href="#"><b>Bình giữ nhiệt Lock&Lock Colorful Tumbler (FUNCOLOR) </b></a></div>
+                                                </div>
+                                                <div class="product-quantity">
+                                                    1
+                                                </div>
+                                                <div class="product-line-price">190.000.000 <span>VNĐ</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="totals">
+                                            <div class="inner-totals">
+                                                <div class="totals-item">
+                                                    <label>Tổng tiền</label>
+                                                    <div class="totals-value" id="cart-subtotal"><b>2.000.000 VNĐ</b></div>
+                                                </div>
+                                                <div class="totals-item totals-item-total">
+                                                    <div class="inner">
+                                                        <label>Thành tiền</label>
+                                                        <div class="totals-value" id="cart-total">
+                                                            <b>2.015.000 VNĐ</b><br>
+                                                            <span>(đã bao gồm VAT)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-cart">
+                        <div class="col-md-4">
+                            <div>
+                                <b>Khi nào tôi nhận được hàng?</b>
+                                <p>
+                                    Thời gian giao hàng dự kiến là thời gian được tính từ lúc đơn hàng được tạo đến lúc giao đến địa chỉ của quý khách. Thời gian này bao gồm thời gian duyệt đơn hàng, thực hiện đơn hàng, cộng với thời gian giao hàng sau khi chuyển đơn hàng qua đơn hàng vận chuyển.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <b>Khi nào tôi nhận được hàng?</b>
+                                <p>
+                                    Thời gian giao hàng dự kiến là thời gian được tính từ lúc đơn hàng được tạo đến lúc giao đến địa chỉ của quý khách. Thời gian này bao gồm thời gian duyệt đơn hàng, thực hiện đơn hàng, cộng với thời gian giao hàng sau khi chuyển đơn hàng qua đơn hàng vận chuyển.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div>
+                                <b>Khi nào tôi nhận được hàng?</b>
+                                <p>
+                                    Thời gian giao hàng dự kiến là thời gian được tính từ lúc đơn hàng được tạo đến lúc giao đến địa chỉ của quý khách. Thời gian này bao gồm thời gian duyệt đơn hàng, thực hiện đơn hàng, cộng với thời gian giao hàng sau khi chuyển đơn hàng qua đơn hàng vận chuyển.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- AND cha_content -->
+
+        <div id="cha_footer">
+            <div id="cha_footer_top" class="footer">
+                <div class="container">
+                    <div class="container_in">
+                        <div class="row">
+                            <div class="col-phone-12 col-xs-6 col-sm-3 col-md-3 column">
+                                <div class="contact_us">
+                                    <h6>Liên hệ</h6>
+                                    <ul class="fa-ul">
+                                        <li class="pd-right">
+                                            <i class="fa-li fa fw fa-clock-o"> </i>
+                                            <p>Thứ 2 - thứ 7: 7h - 22h </p>
+                                            <p>CN & ngày lễ: 8h - 17h </p>
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fw fa-home"> </i> 118/85 Số 8, P. Bình Hưng Hòa B, Q.Bình Tân, HCM, Việt Nam
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fw fa-phone"> </i>
+                                            <p>(84 8) 6676 9457</p>
+                                            <p>(84) 0903 86 3457</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fw fa-envelope"> </i>
+                                            <p>
+                                                <a href="mailto:cskh@cuahang247.com">cskh@cuahang247.com</a>
+                                            </p>
+                                            <p>
+                                                <a href="mailto:vc@cuahang247.com">vc@cuahang247.com</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-social">
+                                        <li class="icon-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="icon-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="icon-dri"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                        <li class="icon-lin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="icon-gl"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-phone-12 col-xs-6 col-sm-3 col-md-2 column">
+                                <h6>Danh mục</h6>
+                                <ul>
+                                    <li>
+                                        <a href="listing-list.html">Thời trang</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing-list.html">Sức khỏe & Làm đẹp</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing-list.html">Điện tử & Công nghệ</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing-list.html">Mobile & Tablet</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing-list.html">Nhà cửa & Gia Dụng</a>
+                                    </li>
+                                    <li>
+                                        <a href="listing-list.html">Khuyến mãi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-phone-12 col-xs-6 col-sm-3 col-md-3 column">
+                                <h6>Cửa hàng 247</h6>
+                                <ul>
+                                    <li>
+                                        <a href="thong-tin.html">Thanh toán</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Hướng dẫn đặt hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Giao hàng & Nhận hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Hướng dẫn đổi trả hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Bảo hành</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Về Cửa hàng 247</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Tuyển dụng</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Điều khoản mua bán hàng hóa</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Chính sách bảo mật</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Bảo mật thông tin</a>
+                                    </li>
+                                    <li>
+                                        <a href="thong-tin.html">Bán hàng cùng Lazada</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-phone-12 col-xs-6 col-sm-3 col-md-4 column">
+                                <div class="subcribe-footer">
+                                    <div class="block-subscribe">
+                                        <div class="block_head">
+                                            <h6>Đăng ký nhận tin khuyến mãi</h6>
+                                        </div>
+                                        <form>
+                                            <div class="block_content">
+                                                <div class="input-box">
+                                                    <div class="input_warp">
+                                                        <input id="newsletter" class="input-text required-entry validate-email" type="text" title="Sign up for our newsletter" placeholder="Nhập email của bạn" name="email">
+                                                    </div>
+                                                    <div class="button_warp">
+                                                        <button class="button gfont" title="Subcribe" type="submit">
+                                                            <span>
+                                                                <span>Gửi</span>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-phone-12 col-xs-6 column">
+                                        <h6 class="ch-h6">Chứng nhận</h6>
+                                        <div class="footer-item">
+                                            <div class="item-regis">
+                                                <a href="#" target="_blank"><img alt="" title="" src="images/notified.png"></a>
+                                                <a href="#" target="_blank"><img alt="" title="" src="images/notified.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-phone-12 col-xs-6 column">
+                                        <h6 class="ch-h6">DỊCH VỤ GIAO HÀNG</h6>
+                                        <div class="footer-item">
+                                            <div class="item-regis">
+                                                <span><img alt="" title="" src="images/vietnampost.jpg" /></span>
+                                                <span><img alt="" title="" src="images/vietnampost.jpg" /></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cha_footer_bottom" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="sns-copyright">
+                                © 2016 Cửa Hàng 247. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="payment">
+                                <img src="images/cha_paymal.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- AND FOOTER -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="js/jquery.price_format.2.0.min.js"></script>
+    <script src="js/fileinput.js"></script>
+    <script src="js/sns-extend.js"></script>
+    <script src="js/less.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/sns-extend.js"></script>
+    <script src="js/jquery.photoswipe-global.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

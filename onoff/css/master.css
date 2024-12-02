@@ -1,0 +1,837 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+	SiteName : 
+	FileName : master.css
+	Description : master style
+	Prefix: elm(=elementary)
+	
+	== TOC =========================================
+	1 : header
+	2 : main content
+	3 : footer
+	
+-------------------------------------------------- */
+html {
+	overflow-y: scroll;
+}
+body {
+	color: #151B1B;
+	margin: 0 auto;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	background: #f9fafc;
+	font-size: 12px;
+	text-align: left;
+	min-width: 1024px; 
+	width: 100%;
+}
+.fixbody{position: fixed;}
+
+/*
+@font-face {
+  font-family: 'GaramondPremrPro-Bd';
+  src: url('../fonts/GaramondPremrPro-Bd.eot');
+  src: url('../fonts/GaramondPremrPro-Bd.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GaramondPremrPro-Bd.woff') format('woff'),
+       url('../fonts/GaramondPremrPro-Bd.ttf') format('truetype'),
+       url('../fonts/GaramondPremrPro-Bd.svg#GaramondPremrPro-Bd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GaramondPremrPro-Smbd';
+  src: url('../fonts/GaramondPremrPro-Smbd.eot');
+  src: url('../fonts/GaramondPremrPro-Smbd.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/GaramondPremrPro-Smbd.woff') format('woff'),
+       url('../fonts/GaramondPremrPro-Smbd.ttf') format('truetype'),
+       url('../fonts/GaramondPremrPro-Smbd.svg#GaramondPremrPro-Smbd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'axisstd-regular';
+  src: url('../fonts/axisstd-regular.eot');
+  src: url('../fonts/axisstd-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/axisstd-regular.woff') format('woff'),
+       url('../fonts/axisstd-regular.ttf') format('truetype'),
+       url('../fonts/axisstd-regular.svg#axisstd-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+html,
+body {
+   height:100%;
+}
+/*html {
+	background: url('../img/graphics/bg.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
+
+/*.bg-color { background: #000; }*/
+#container {
+   min-height: 100%;
+   position:relative;
+}
+.bg {
+	position:fixed; 
+	top:-50%; 
+	left:-50%; 
+	width:200%; 
+	height:200%;
+	z-index: -1
+}
+.bg img {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	margin:auto; 
+	min-width:50%;
+	min-height:50%;
+	z-index: -1
+}
+.header {
+	font-family: 'EB Garamond', 'Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	font-weight: normal;
+	/*position: absolute;*/
+	position: relative;
+	width: 100%;
+	z-index: 2100;
+	height: 62px;
+	-webkit-font-smoothing: antialiased;
+}
+.he-com {
+	
+}
+.showFix {
+	display: none;
+	background: url('../img/graphics/bg-local.png') repeat left top;
+	overflow: hidden;
+	width: 100%;
+}
+/* location
+================================================== */
+.location{
+	background: url('../img/graphics/bg-local.png') repeat left top;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.inner-location {
+	color: #fff;
+	width: 950px;
+	margin: 0 auto 0;
+	
+}
+
+.inner-rec { text-align: center; font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;}
+
+/* inner-he
+================================================== */
+.inner-he {
+	background: url('../img/graphics/bg-he.gif') repeat-x left top;	
+	width: 100%;
+	height: 62px;
+	overflow: hidden;
+}
+.bg-he {
+	background: url('../img/graphics/bg-over.png') no-repeat center top;
+	height: 62px;
+	/*width: 100%;*/
+	/*width: 1176px;*/
+	width: 1007px; /* 1024-17 */
+	margin: 0 auto
+}
+.inner-he a {
+	color: #fff;
+	letter-spacing: 2px;
+}
+.change-he {
+	background: url('../img/graphics/bg-local.png') repeat left top;
+	/*padding-bottom: 34px;*/
+}
+.change-he .bg-he {
+	background: none;
+}
+.change-he-ot {padding-bottom: 34px;}
+.fixbody .location{ padding-bottom: 80px}
+
+.nav-he { text-align: center; padding-top: 4px;}
+.nav-he li {
+	display: inline-block;
+	/*margin: 0 12px;*/
+	margin-top: 16px;
+	vertical-align: middle;
+}
+.nav-he li a:hover {
+	color: #979797
+}
+.nav-he li a.active {
+	color: #adadad
+}
+
+/* Effect 1: Brackets */
+/*.nav-he a::before,
+.nav-he a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav-he a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav-he a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+*/
+/*.nav-he a:hover::before,
+.nav-he a:hover::after,
+.nav-he a:focus::before,
+.nav-he a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}*/
+
+.inner-he .logo { margin: 13px 40px 0 45px; }
+.serviceNAV {margin: 0 45px 0 45px;}
+.recuitNAV {margin: 0 45px 0 45px;}
+
+
+/*.nav-he .logo a::before {
+	margin-right: 10px;
+	content: '';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav-he .logo a::after {
+	margin-left: 10px;
+	content: '';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}*/
+.inner-he .logo h1{
+	background: url('../img/graphics/logo.png') no-repeat center;
+	width: 114px;
+	height: 27px;
+}
+.bg-he div { 
+	float: right;
+	margin: -20px 0px 0 0px;
+}
+.bg-he p a {
+	background: url('../img/graphics/it.png') no-repeat left 60%;
+	padding-left: 13px;
+}
+.bg-he p {
+	background: url('../img/graphics/jp.gif') no-repeat right 60%;
+	display: inline;
+/* 	font-weight: bold; */
+	font-size: 8px!important;
+	padding:2px 20px 0 0;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	color: #fff;
+}
+.bg-he p a:hover {
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.bg-he div p span { margin: 0 5px; }
+
+/* 2 : main content
+================================================== */
+
+.content {
+	padding: 50px 0;
+	margin: 0 auto;
+  	overflow: hidden;
+}
+.inner-content { /*padding: 60px 0 0px;*/ }
+.sec-com {
+	display: none;
+	width: 880px;
+	margin: 0 auto;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+
+}
+.sec-show {
+	display: block;
+	width: 880px;
+	margin: 0 auto;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+}
+.sec-com .title-com { margin-bottom: 30px;}
+.title-com {
+	font-size: 80px;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: 30px;
+	text-transform: uppercase;
+	overflow: hidden;
+	width: 100%;
+}
+
+/* Home page
+================================================== */
+
+.home-page {
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	width: auto;
+}
+.width-scr {
+	width: 1000px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.home-page li { list-style-type: none; }
+.flexslider .slides {
+
+}
+/*B- add css for thumb image*/
+.p-sli { }
+.p-sli .img-sli {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+.flexslider ul a .img-sli { position: inherit;}
+/*E- add css for thumb image*/
+.img-item img {
+	display: block;
+	max-width: 100%;
+}
+iframe {
+	width: 100% !important;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+/* about-us
+================================================== */
+
+.about-us {
+	margin: 0 auto;
+	text-align: center;
+	font-weight: normal; 
+}
+.about-us .title-com { margin-bottom: 70px; color: #fff }
+.about-us p {
+	/*letter-spacing: 5px */
+}
+.about-us span {
+	font-size: 15px;
+	/*letter-spacing: 5px;*/
+	line-height: 1.8;
+	font-weight: normal;
+	color: #fff;
+}
+/* margin
+================================================== */
+.margin-20 {
+	margin-bottom: 20px;
+}
+.margin-40 {
+	margin-bottom: 40px;
+}
+.margin-30 {
+	margin-bottom: 30px;
+}
+.margin-60 {
+	margin-bottom: 60px;
+}
+.margin-70 {
+	margin-bottom: 70px;
+}
+/* font -- color
+================================================== */
+.Garamond-sb {
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+}
+.yellow {
+	color: #ece274;
+}
+.font-64 {
+	font-size: 64px;
+}
+.font-26 {
+	font-size: 26px;
+}
+.font-44 {
+	font-size: 44px;
+}
+.font-13 {
+	font-size: 13px;
+}
+.font-14 {
+	font-size: 14px;
+	line-height: 1.8;
+}
+/* service
+================================================== */
+.service {
+	padding-bottom: 20px
+}
+.survay {
+	width: 656px;
+	height: 552px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.survay div {
+	position: absolute;
+
+}
+.s1 {
+	background: url('../img/graphics/s1.png') no-repeat center;
+	width: 164px;
+	height: 45px;
+	top: 81px;
+	left: 0px;
+}
+.s2 {
+	background: url('../img/graphics/s2.png') no-repeat center;
+	width: 156px;
+	height: 107px;
+	top: 0px;
+	left: 173px;
+}
+.s3 {
+	background: url('../img/graphics/s3.png') no-repeat center;
+	width: 157px;
+	height: 94px;
+	top: 0px;
+	left: 364px;
+}
+.s4 {
+	background: url('../img/graphics/s4.png') no-repeat center;
+	width: 111px;
+	height: 19px;
+	top: 109px;
+	left: 294px;
+}
+.s5 {
+	background: url('../img/graphics/s5.png') no-repeat center;
+	width: 111px;
+	height: 178px;
+	top: 124px;
+	right: 0px;
+}
+.s6 {
+	background: url('../img/graphics/s6.png') no-repeat center;
+	width: 196px;
+	height: 107px;
+	top: 332px;
+	left: 377px;
+}
+.s7 {
+	background: url('../img/graphics/s7.png') no-repeat center;
+	width: 98px;
+	height: 19px;
+	top: 300px;
+	left: 396px;
+}
+.s8 {
+	background: url('../img/graphics/s8.png') no-repeat center;
+	width: 164px;
+	height: 91px;
+	top: 343px;
+	left: 178px;
+}
+.s9 {
+	background: url('../img/graphics/s9.png') no-repeat center;
+	width: 130px;
+	height: 178px;
+	top: 136px;
+	left: 40px;
+}
+.s10 {
+	background: url('../img/graphics/s10.png') no-repeat center;
+	width: 118px;
+	height: 20px;
+	top: 300px;
+	left: 215px;
+}
+.s11 {
+	background: url('../img/graphics/s11.png') no-repeat center;
+	width: 653px;
+	height: 19px;
+	bottom: 0px;
+	left: 0px;
+}
+/* works
+================================================== */
+.works {
+	width: 1000px;
+	font-weight: normal;
+}
+.outer-works {
+	position: relative; z-index: 2000;
+}
+.works .title-com {
+	color: #fff
+}
+.inner-works {
+
+}
+.inner-works li {
+	width: 320px;
+	height: 240px;
+	float: left;
+	line-height: 1.5;
+	margin-left: 20px;
+	overflow: hidden;
+}
+.inner-works li.alpha {
+	margin-left: 0 !important;
+}
+.inner-works li a {
+	color: #fff
+}
+.inner-works li a:hover, .inner-works li a:hover p {
+	color: #eee;
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.inner-works li span {
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+}
+
+.load-more {
+	display: block;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.load-more span {
+	display: inline-block;
+	padding: 10px 30px;
+	border: 1px solid #fff;
+}
+.hidecontrol {display: none}
+/*works-detail
+================================================== */
+.wde {
+	width: 1000px;
+	font-weight: normal;
+	margin: 0 auto;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+}
+.wde .title-com { color: #fff; margin-bottom: 30px; }
+
+.inner-detail {
+	color: #fff
+}
+.close-detail {
+	overflow: hidden;
+	text-align: right;
+	margin-bottom: 22px;
+}
+.close-detail a {
+	display: inline-block;
+	background: url('../img/graphics/close.png');
+	height: 21px;
+	width: 21px;
+	cursor: pointer;
+	margin-right: 8px
+}
+.des-de {
+	float: left;
+	width: 480px;
+}
+.list-img {
+	float: right;
+	width: 480px;
+	overflow: hidden;
+}
+.list-img img { margin-bottom: 20px; }
+.title-h3 {
+	font-family: 'Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;;
+	font-weight: normal;
+	font-size: 20px;
+	/*letter-spacing: 5px;*/
+	margin-bottom: 20px;
+}
+.info-h3 {
+	margin-bottom: 35px;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	line-height: 1.6;
+	letter-spacing: 1px;
+}
+.info-h3 a { color: #fff; }
+.info-h3 a:hover { text-decoration: underline; }
+.fck {
+	font-family: 'Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	border-bottom: 1px solid #363b39;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	line-height: 1.6
+}
+.more-info {
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	line-height: 1.6;
+	letter-spacing: 1px;
+}
+/*inner-add
+================================================== */
+.inner-add { font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif; }
+.inner-add ul {
+	width: 420px;
+	float: left;
+}
+
+.inner-add ul:first-child { margin-right: 40px}
+.inner-add li {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.inner-add li p {
+	float: left;
+	width: 100px;
+	font-size: 12px;
+	text-align: right;
+	margin-right: 25px;
+}
+.inner-add li h2 {
+	float: left;
+	width: 100px;
+	text-align: center;
+	margin-right: 30px;
+}
+.inner-add li div {
+	float: left;
+	width: 295px;
+}
+.inner-add li div span {
+	padding: 5px 30px 0px 0;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.inner-add li div a {
+	color: #151B1B;
+}
+.inner-add li input {
+	width: 350px;
+	border: 1px solid #9f9f9f;
+	height: 24px;
+}
+.inner-add .bt {
+	width: 90px;height: 30px; color:#fff; cursor: pointer; background:#151B1B; vertical-align: middle; margin-top: 10px; font-size: 15px;font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	border: none; padding-top: 4px;
+}
+.inner-add textarea { 
+	height: 224px; width: 350px;
+	border: 1px solid #9f9f9f;
+}
+
+
+/*change-add*/
+.change-add ul {
+	width: 450px;
+	padding-top:60px;	
+}
+.change-add ul:first-child { margin-right: 20px}
+.change-add li p {
+	width: 70px;
+	margin-top: 5px;
+}
+.change-add li div {
+	width: 350px;
+}
+.change-add textarea { 
+	width: 349px;
+}
+.inner-add .text {
+	width: 350px;
+	float: left;
+	text-align: right;
+}
+.inner-text {
+	width: 320px;
+	border: 1px solid #9f9f9f;
+	overflow: auto;
+	height: 260px;
+	padding: 20px;
+	margin-bottom: 15px;
+	text-align: left;
+	line-height: 1.6;
+}
+/*local-onoff*/
+.local-onoff {
+	color: #fff;
+	float: left;
+	letter-spacing: 2px;
+}
+.local-onoff h2 {
+	background: url('../img/graphics/logo-co-01.png') no-repeat;
+	width: 93px;
+	height: 22px;
+	margin-bottom: 30px;
+}
+
+.inner-add ul.ul-local { letter-spacing: 1px; width: 500px; float: right;}
+.inner-add ul.ul-local li div {
+	width: 360px;
+}
+
+
+.sing { background: url('../img/graphics/sing.png') no-repeat right 67%; }
+.vn { background: url('../img/graphics/vn.png') no-repeat right 67%; }
+.maly { background: url('../img/graphics/maly.png') no-repeat right 67%; }
+.thailan { background: url('../img/graphics/thailan.png') no-repeat right 67%; }
+.indo { background: url('../img/graphics/indo.png') no-repeat right 67%; }
+
+.sing-co {
+	background: url('../img/graphics/logo-co-02.png') no-repeat center top;
+	height: 34px;
+}
+.vn-co { background: url('../img/graphics/logo-co-03.png') no-repeat center top; height: 23px; }
+.maly-co { background: url('../img/graphics/logo-co-04.png') no-repeat center top; height: 27px; }
+.thailan-co { background: url('../img/graphics/logo-co-05.png') no-repeat center top; height: 36px; }
+.indo-co { background: url('../img/graphics/logo-co-06.png') no-repeat center top; height: 23px; }
+
+.banner {
+	display: none;
+}
+.home-page .banner {
+	position: fixed;
+	bottom: 44px;
+	right: 10px;
+	font-size: 0px;
+	display: block;
+}
+
+.home-page .banner a {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+/* 3 : footer
+================================================== */
+.footer {
+	/*position: absolute;*/
+	position: fixed;
+  clear: both;
+	width: 100%;
+	height: 33px;
+	bottom: 0;
+	z-index: 3000;
+	border-top: 1px solid #21292c;
+
+	background: #151d21;
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+}
+/*.addFo{
+	position: fixed;
+}*/
+.footer p {
+	padding-top: 12px;
+	letter-spacing: 2px;
+}
+.social {
+	position: absolute;
+	right: 10px;
+	bottom: 8px;
+	color:#363b39;
+	letter-spacing: 2px;
+}
+.social div { display: inline-block;}
+.social a, .social span {
+	color: #fff;
+	margin: 0 3px;
+	text-transform: uppercase;
+	font-size: 9px;
+	font-family: 'EB Garamond','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	cursor: pointer;
+}
+.social a:hover, .social span:hover {
+	text-decoration: underline;
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.social a.activeSo {
+	text-decoration: underline;
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.social .fb,.social .tw {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	vertical-align: text-bottom;
+	margin: 0 2px;
+}
+.social .fb {
+	background: url('../img/graphics/fb.gif') no-repeat center;
+}
+.social .tw {
+	background: url('../img/graphics/tw.gif') no-repeat center;
+}
+
+
+/* !! : Over ride items 
+================================================== */
+
+.title-com { font-size: 70px;}
+
+/* !! : Over ride items
+================================================== */
+#contact_confirm .inner-add > ul,#contact_thanks .inner-add > ul{ float: none; margin:0 auto;}
+#contact_confirm .inner-add > ul li { border-bottom: 1px solid #999; padding-bottom:8px;}
+#contact_confirm .inner-add .button_area { width: 450px; margin: 0 auto; padding-top:40px;}
+#contact_confirm .inner-add .button_area .left {float: left;}
+#contact_confirm .inner-add .button_area .right {float: right;}
+.change-add li p.fillin {
+	width: 320px;
+	text-align: left;
+}
+.inner-add .text {
+padding-top:60px;
+}
+p.error { width: 320px!important; color:#b30000!important; text-align: left!important; margin-top:6px;}
+
+#contact_thanks .change-add > ul li p.fillin{
+	width: 450px; 
+	text-align: center;
+	margin: 0 auto;
+}
+.footer a {text-decoration: none!important;}

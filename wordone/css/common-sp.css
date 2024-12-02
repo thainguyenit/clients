@@ -1,0 +1,196 @@
+
+@media only screen and (min-width: 768px){
+	body { min-width: 972px; }
+}
+@media only screen and (min-width: 768px) and (max-width: 962px){
+	.main-nav ul {
+		width: 100%
+	}
+	.nav-M li {
+		width: 16%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.main-nav {	text-align: left; }
+	.main-nav ul {
+		display: none;
+		height: auto;
+		margin-top: 18px;
+		width: 100%
+	}
+	.main-nav ul li {
+		width: 100%;
+		display: block;
+		border-bottom: 1px solid #000;
+		border-left: none;
+		background: #1f3682;
+	}
+	.main-nav li a {
+		width: 97%;
+		padding-left: 3%;
+		text-align: left;
+	}
+	.main-nav a#pull {
+		display: inline-block;
+		position: relative;
+		padding: 20px 0 0 40px;
+		color: #fff;
+	}
+	.main-nav a#pull:after {
+		content:"";
+		background: url('../img/graphics/nav-icon.png') no-repeat left top;
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		position: absolute;
+		left: 10px;
+		top: 15px;
+	}
+
+}
+/*Styles for screen 767px and lower*/
+@media only screen and (max-width: 767px) {
+	body { min-width: auto; }
+	.width-962 { width: auto;}
+	
+	.home-page .inner {
+		margin-right: 10px;
+		margin-left: 10px;
+		text-align: center;
+	}
+	.home-page .inner p {
+		font-size: 28px;
+	}
+	.home-page .inner a {
+		margin: 0 auto
+	}
+
+
+	.inner-company .info, .inner-company .link {
+		width: 100%;
+		float: none;
+	}
+	.inner-company .info {
+		margin-bottom: 30px
+	}
+	.inner-company .info h2, .inner-company .link h2 {
+		text-align: center;
+	}
+	.inner-company .info p,  .inner-company .link p {
+		margin-left: 10px
+	}
+	.map-pc {
+		display: none;
+	}
+	.map-sp {
+		display: block;
+	}
+	
+	.left-press {
+		margin-bottom: 30px
+	}
+	.left-press, .right-press  {
+		width: 100%;
+	}
+	.inner-top { margin-left: 10px; }
+	.right-press .info,.left-press .info {
+		margin: 0 10px
+	}
+
+	.contact-page .address {
+		margin-left: 10px;
+		margin-bottom: 30px
+	}
+	.contact-page .form-contact {
+		width: auto;
+		float: left;
+		padding: 0 10px
+	}
+
+	.detail-new .des img {
+		margin: 0 60px 30px 0px
+	}
+
+	.change-fo div span{
+		margin-left: 10%;
+	}
+
+	.bio .inner {
+		padding: 0 5%;
+	}
+	.left-bio {
+		margin-bottom: 50px
+	}
+	.left-bio, .right-bio {
+		float: none;
+		width: 100%;
+	}
+	.header-other div {
+		margin: 132px 0 9px 5%;
+	}
+	.header-other h2 {
+		margin: 0px 0 0 5%;
+	}
+	.circle-move {
+		float: none;
+		margin: 0 auto;
+	}
+	.circl-com li {
+		margin: 0;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.col_3 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	
+}
+@media only screen and (max-width: 415px) {
+	.info02 p {
+		font-size: 11px;
+		line-height: 1.4
+	}
+	.info02 p:last-child {
+		margin-left: 12px;
+	}
+	.info02 p b {
+		font-size: 10px;
+	}
+
+}
+@media only screen and (max-width: 360px) {
+	.home-page .inner p {
+		font-size: 26px;
+	}
+}
+@media only screen and (max-width: 354px) {
+	.changecir li {
+		height: 84px;
+		width: 84px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.circle-move {
+		margin-left: 12%
+	}
+}
+@media only screen and (max-width: 340px) {
+	.circl-com a {
+		height: 94px;
+		width: 94px;
+	}
+
+}
+@media only screen and (max-width: 320px) {
+	body { min-width: 320px; }
+	.circle-move {
+		margin-left: 8%
+	}
+	.home-page .inner p {
+		font-size: 23px;
+	}
+}

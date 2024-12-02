@@ -1,0 +1,74 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+	/*
+		your_name
+		phonetic
+		company_name
+		department_manager
+		email_address
+		phone_number
+		inquiry
+		personal_information
+		send_mail_submit
+	*/
+	$(function(){
+		$('#sendMailForm').submit(function() {
+			var your_name 				= $('#your_name').val();
+			var phonetic				= $('#phonetic').val();
+			var company_name			= $('#company_name').val();
+			var department_manager		= $('#department_manager').val();
+			var email_address			= $('#email_address').val();
+			var phone_number			= $('#phone_number').val();
+			var inquiry					= $('#inquiry').val();
+			var personal_information	= $('#personal_information').val();
+			var send_mail_submit		= $('#send_mail_submit').val();
+
+			var jsonData = {
+							your_name			: your_name, 
+							phonetic			: phonetic,
+							company_name		: company_name,
+							department_manager 	: department_manager,
+							email_address		: email_address,
+							phone_number		: phone_number,
+							inquiry				: inquiry,
+							personal_information: personal_information,
+							send_mail_submit	: send_mail_submit
+							};
+
+			var url = 'sendMail.php';
+
+			var request = $.ajax({
+								url: url,
+								type: "POST",
+								data: jsonData
+							});
+
+			request.done(function(msg) {
+				alert(msg);
+				var result = jQuery.parseJSON(msg);
+				if(result['status'] == 'TRUE'){
+					alert( "Request OK");
+				}else{
+					alert( "Request FALSE" + result['msg']);
+				}
+			});
+
+			request.fail(function(jqXHR, textStatus) {
+				alert( "Request failed: ");
+			});
+			return false;
+		});
+	});
+</script>
+
+<form id='sendMailForm' method='post' action='sendMail.php'>
+	<input type='text' id='your_name' name='your_name' value='your_name'/><br/><br/>
+	<input type='text' id='phonetic' name='phonetic' value='phonetic'/><br/><br/>
+	<input type='text' id='company_name' name='company_name' value='company_name'/><br/><br/>
+	<input type='text' id='department_manager' name='department_manager' value='department_manager'/><br/><br/>
+	<input type='text' id='email_address' name='email_address' value='email_address'/><br/><br/>
+	<input type='text' id='phone_number' name='phone_number' value='phone_number'/><br/><br/>
+	<input type='text' id='inquiry' name='inquiry' value='inquiry'/><br/><br/>
+	<input type='text' id='personal_information' name='personal_information' value='personal_information'/><br/><br/>
+	<input type='submit' id='send_mail_submit' name='send_mail_submit' value='send_mail_submit'/>
+</form>
